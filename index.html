@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Développeur WEB</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/etoiles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/814bec3aa1.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/814bec3aa1.js" crossorigin="anonymous" ></script>
+  <script src="js/script.js"></script>
+</head>
+<body onload="showTab('about');">
+  <header id="canvas">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <h1 class="title">
+      <span>Développeur WEB</span>
+    </h1>
+  </header>
+  <main>
+    <aside class="lateral">
+      <div class="bloc">
+        <figure>
+          <img id="profilePicture" src="images/ma_photo_de_profil.jpg" alt="Une photo d'identité">
+        </figure>
+      </div>
+      <div class="bloc">
+        <table>
+          <tr>
+            <td colspan="2">Francis Clerfayt</td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fas fa-birthday-cake fa-lg"></i>
+            </td>
+            <td>
+              <p>
+                <script>document.write(age())</script> ans
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fas fa-home fa-lg"></i>
+            </td>
+            <td><a href="https://goo.gl/maps/sybDRktr5TP5CdEh8" target="_blank">59990 Saultain</a></td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fas fa-car fa-lg"></i>
+            </td>
+            <td>Permis B, Véhiculé.</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/union_jack_24.png" alt="The union jack (flag of the united kingdom)">
+            </td>
+            <td>Bonne maîtrise.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn-cont" id="dark">
+        <ul class="btn-list rounded">
+          <li><a href="tel:+33661785137" class="btn-gradient rounded mobile" title="Téléphone Fixe"><i class="fas fa-mobile-alt fa-lg"></i></a></li>
+          <li><a href="tel:+33327365137" class="btn-gradient rounded phone" title="Téléphone Mobile"><i class="fas fa-phone fa-lg"></i></a></li>
+          <li><a href="mailto:francis.clerfayt@gmail.com" class="btn-gradient rounded gmail" title="E-mail"><i class="fas fa-at"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/francis-clerfayt-959372195" class="btn-gradient rounded linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="" class="btn-gradient rounded github" title="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="images/CV.pdf"  class="btn-gradient rounded download" target="_blank" title="Télécharger Version PDF"><i class="fas fa-download"></i></a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="contenu">
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item" id="linkAbout" onclick="showTab('about');">
+            <a onclick="showTab('about');"><h2>A mon propos</h2></a>
+          </li>
+          <li class="nav-item" id="linkExp" onclick="showTab('XP');">
+            <a onclick="showTab('XP');"><h2>Mes Expériences</h2></a>
+          </li>
+          <li class="nav-item" id="linkTraining" onclick="showTab('training');">
+            <a onclick="showTab('training');"><h2>Mes Formations</h2></a>
+          </li>
+          <li class="nav-item" id="linkSkill" onclick="showTab('skill');">
+            <a onclick="showTab('skill');"><h2>Mes Compétences</h2></a>
+          </li>
+          <li class="nav-item" id="linkHobby" onclick="showTab('hobby')">
+            <a onclick="showTab('hobby')"><h2>Mes Loisirs</h2></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="onglet">
+        <div class="hide active" id="aPropos">
+          <p>
+            
+          </p>
+        </div>
+        <div class="hide" id="experience">
+          <ul class="list1">
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3>Septembre 2019 - Juin 2020</h3>
+                  <h4>CDDI Atelier Numérique | <a href="http://www.ageval.net/" target="_blank">Assocation AGEVAL</a> | Valenciennes 59300</h4>
+                  <p>
+
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_AGEVAL.png" alt="logo association AGEVAL">
+                </div>
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3>Avril 2012 - Juin 2012</h3>
+                  <h4>Développeur stagiaire | <a href="https://www.sigh-habitat.fr/" target="_blank">Groupe GHI</a> | Valenciennes 59300</h4>
+                  <p>
+                    <span>Ce stage de validation de ma troisième année de licence informatique, avait pour but d’établir un logiciel de gestion de stock de matériels informatique (PC portable, clés USB, …) afin que le service informatique puisse avoir une trace des prêt et empreint de matériels et ainsi récupérer ceux-ci quand un employé quitté l’entreprise par exemple.</span><br>
+                    <span>Après études des besoins et création d’une liste des différents matériels concernés, une base de données a été créée. Développement de l’application sous WINDEV, avec feed-back régulier des utilisateurs finaux.</span><br>
+                    <span>Après le déploiement de l’application par mon référent, après la fin de mon stage, je suis retourné voir les utilisateurs finaux pour une démonstration explicative, ainsi qu’une légère modification de l’interface utilisateur.</span>
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_SIGH.png" alt="logo Société Immobilière Grand Hainaut">
+                </div>
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3>Avril 2011 - Juin 2011</h3>
+                  <h4>Développeur stagiaire | <a href="https://www.sigh-habitat.fr/" target="_blank">Groupe GHI</a> | Valenciennes 59300</h4>
+                  <p>
+                    <span>Ce stage de validation de mon DUT avait pour but la refonte total d’un logiciel de gestion des SICAV (titres boursiers), en effet ce logiciel était en DOS et amené une utilisation fastidieuse. </span><br>
+                    <span>Avec l’aide de mon référent nous sommes allés interroger les personnes du service financier, qui sont les utilisateurs finaux, qui nous ont alors fait une description du logiciel qui était en place ainsi qu’une énumération des différents changements à apporter. Après avoir établi les besoins, je me suis familiariser avec l’environnement WINDEV que je manipuler pour la première fois.</span><br>
+                    <span>Ensuite, après une copie de la base de données du logiciel en place, une analyse de celle-ci a été faite, et il a été décider de faire une refonte et migration complète, en effet il y avait dans certaines tables des données qui n’existait plus dans d’autres. Après création de la base de données, et migration des données, une correction des erreurs et un nettoyage des données inutiles a été effectué.</span><br>
+                    <span>Le nouveau logiciel, développer sous WINDEV, n’étant pas totalement finis, une erreur empêchant le déploiement, mon référent a pris la suite du projet.</span>
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_SIGH.png" alt="logo Société Immobilière Grand Hainaut">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hide" id="formation">
+          <ul class="list1">
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3><a href="https://formations.uphf.fr/cdm/subProgram/FR_RNE_0593279U_PR_SOF-7415/FR_RNE_0593279U_PR_SOF-7417" target="_blank">Niveau Master 2 : Informatique, Réseaux et Sécurité</a></h3>
+                  <h4>2012 - 2015 | <a href="https://www.uphf.fr/" target="_blank">Université de Valenciennes et du Hainaut Cambrésis</a> | Valenciennes 59300</h4>
+                  <p>
+                    Le Master Technologies Nouvelles des Systèmes d’Information (TNSI) a pour objectif de former des cadres ou ingénieurs de haut niveau de compétences pour la conception et la mise en œuvre des systèmes d’information, l’ingénierie de projets informatiques, le développement et l’intégration d’application, le génie logiciel, les systèmes d’information distribués, les interactions homme-machine et les nouvelles architectures embarquées. Cette formation permet d’aborder au mieux le monde industriel (SSII, PME/PMI, grandes entreprises, etc.) sans oublier les collectivités locales qui ont aussi des besoins importants sous l’angle des systèmes d’information.
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_ISTV_UPHF.png" alt="logo de L'institut des sciences et techniques de valenciennes">
+                </div>
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3><a href="https://formations.uphf.fr/cdm/program/FR_RNE_0593279U_PR_SOF-7378" target="_blank">Licence Informatique</a></h3>
+                  <h4>2011 - 2012 | <a href="https://www.uphf.fr/" target="_blank">Université de Valenciennes et du Hainaut Cambrésis</a> | Valenciennes 59300</h4>
+                  <p>
+                    Cette licence propose une approche fondamentale de la discipline en informatique, avec une ouverture scientifique et technologique visant à apporter aux étudiants un socle de connaissances leur permettant d’intégrer un Master en informatique.
+                    La formation permet notamment d’acquérir des compétences transversales : analyse d’un problème, capacités de synthèse, de résolution d’un problème, capacité à s’exprimer et à échanger des informations, capacité à travailler en équipe. Une partie importante du volume total des enseignements se déroule sous forme de Travaux Pratiques et/ou Projets.
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_ISTV_UPHF.png" alt="logo de L'institut des sciences et techniques de valenciennes">
+                </div>
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="exp">
+                <div class="text">
+                  <h3><a href="https://formations.uphf.fr/cdm/program/FR_RNE_0593279U_PR_I2INF261" target="_blank">Diplome Universitaire de Technologie en Informatique</a></h3>
+                  <h4>2009 - 2011 | <a href="https://www.uphf.fr/IUT/" target="_blank">Institut Universitaire de Technologie de Maubeuge</a> | Maubeuge 59600</h4>
+                  <p>
+                    Les étudiants formés doivent être capables de participer à la conception, la réalisation et la mise en oeuvre de systèmes informatiques correspondant aux besoins des utilisateurs. Pour assumer ces responsabilités, les informaticiens doivent être compétents sur le plan technologique,connaître l'environnement socio-économique dans lequel ils auront à exercer leur profession, posséder une bonne culture générale et se montrer aptes à la communication.
+                  </p>
+                </div>
+                <div class="logo">
+                  <img src="images/logo_IUT_VCM.png" alt="logo de Institut universitaire de technologie de Valenciennes Cambrai Maubeuge">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hide" id="skills">
+          <div class="gallery">
+            <div class="clipped-border">
+              <img src="images/Java_logo_128.png" alt="logo JAVA" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/C_logo_128.png" alt="logo C" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/HTML5_logo_128.png" alt="logo HTML 5" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/css3_logo_128.png" alt="logo CSS 3" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/oracle_logo_128.png" alt="logo Oracle" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/mysql_logo_128.png" alt="logo MySQL" class="clipped">
+            </div>
+            <div class="clipped-border">
+              <img src="images/jQuery_logo_128.png" alt="logo JQuery" class="clipped">
+            </div>
+          </div>
+        </div>
+        <div class="hide" id="hobby">
+          <div class="flips">
+            <div class="flip">
+              <div class="container_flip">
+                <div class="front_flip" id="videoGames">
+                  <div class="inner">
+                    <h4>Jeux-vidéo</h4>
+                  </div>
+                </div>
+                <div class="back_flip">
+                  <div class="inner">
+                    <p>Jouer, Tester, participer à des tests bêta, et récemment essayer des outils pour en développer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="container_flip">
+                <div class="front_flip" id="movies">
+                  <div class="inner">
+                    <h4>Films & Séries</h4>
+                  </div>
+                </div>
+                <div class="back_flip">
+                  <div class="inner">
+                    <p>Surtout de la Science-Fiction (Stargate, Star Wars, ...) et de la Fantasie (Seigneur des Anneaux, Game of Thrones, ...).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="container_flip">
+                <div class="front_flip" id="books">
+                  <div class="inner">
+                    <h4>Lecture</h4>
+                  </div>
+                </div>
+                <div class="back_flip">
+                  <div class="inner">
+                    <p>Des Bandes Dessinées, Comics, Manga et Roman.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+  </footer>
+</body>
+</html>

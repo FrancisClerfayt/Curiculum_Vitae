@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p { margin: 1% 1% 0 1%;}
+
+/* ---------- Début header ---------- */
+header {
+  width: 100%;
+  align-self: flex-start;
+}
+#canvas {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #13406d 100%);
+  overflow: hidden;
+}
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  margin: auto;
+}
+.title span {
+  background: -webkit-linear-gradient(#BA7500, #FFAB19);
+  background: -o-linear-gradient(#BA7500, #FFAB19);
+  background: linear-gradient(#BA7500, #FFAB19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* pour les classes : stars, stars2 et stars3 voir étoiles.css */
+/* ---------- Fin header ---------- */
+
+/* ---------- Début Contenu ---------- */
+main {
+  align-self: flex-start;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+}
+/* ---------- Début Side-bar ---------- */
+.lateral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #D4E6FF;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 12.5%;
+  padding: 0.5%;
+}
+.lateral a {
+  color: darkblue;
+  text-decoration: none;
+}
+.bloc table tr td { padding: 5px 10px;}
+#profilePicture {
+  max-width: 175px;
+  border-radius: 10px;
+  border: 2px solid #13406d;
+}
+@media screen and (max-width: 1024px) {
+  .lateral {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .bloc {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* ---------- Début bouton contact ---------- */
+.btn-cont {
+  width: 100%;
+}
+.btn-list {
+  width: 100%;
+  margin: 1% 0;
+  padding: 1% 1.6%;
+  position: relative;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.btn-gradient {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 1.9;
+  display: block;
+  margin: 10px;
+  border-radius: 50%;
+  -webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+.btn-gradient i {
+  font-size: 18px;
+  line-height: 1;
+  vertical-align: middle;
+}
+#dark {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+#dark .btn-gradient {	color: rgba(0,0,0,0.54);}
+#dark .btn-gradient:hover {	color: #000;}
+#dark .btn-gradient:hover.download {color: #fff;}
+#dark .btn-list:after {
+	color: rgba(255,255,255,0.54);
+	background: #000;
+}
+#dark .btn-gradient.mobile { border: 1px solid #29B6F6;}
+#dark .btn-gradient.phone { border: 1px solid #FF1744;}
+#dark .btn-gradient.gmail { border: 1px solid #D50000;}
+#dark .btn-gradient.linkedin { border: 1px solid #0288D1;}
+#dark .btn-gradient.github { border: 1px solid #B0BEC5;}
+#dark .btn-gradient.download { border: 1px solid #212121;}
+@-webkit-keyframes Gradient {
+	0% { background-position:0 50% }
+	50%	{	background-position:100% 50% }
+	100% { background-position:0 50% }
+}
+@keyframes Gradient {
+	0% { background-position:0 50% }
+	50%	{	background-position:100% 50% }
+	100% { background-position:0 50% }
+}
+#dark .btn-gradient.mobile:hover {
+	box-shadow:0 5px 8px rgba(3,169,244,0.50);
+	background: #030000;
+	background: #039BE5;
+	background: -webkit-linear-gradient(left,#039BE5 0%,#29B6F6 100%);
+	background: linear-gradient(to right,#039BE5 0%,#29B6F6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#039BE5',endColorstr='#29B6F6',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite
+}
+#dark .btn-gradient.phone:hover {
+	box-shadow: 0 5px 8px rgba(244,67,54,0.50);
+	background: #F44336;
+	background: -webkit-linear-gradient(left,#F44336 0%,#FF1744 100%);
+	background: linear-gradient(to right,#F44336 0%,#FF1744 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F44336',endColorstr='#FF1744',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite
+}
+#dark .btn-gradient.gmail:hover {
+	box-shadow: 0 5px 8px rgba(244,67,54,0.50);
+	background: #D50000;
+	background: -webkit-linear-gradient(left,#D50000 0%,#FF1744 100%);
+	background: linear-gradient(to right,#D50000 0%,#FF1744 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D50000',endColorstr='#FF1744',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite;
+}
+#dark .btn-gradient.linkedin:hover {
+	box-shadow: 0 5px 8px rgba(3,169,244,0.50);
+	background: #0288D1;
+	background: -webkit-linear-gradient(left,#0288D1 0%,#2196F3 100%);
+	background: linear-gradient(to right,#0288D1 0%,#2196F3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0288D1',endColorstr='#2196F3',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite;
+}
+#dark .btn-gradient.github:hover {
+	color: rgba(33,33,33,1);
+	box-shadow: 0 5px 8px rgba(0,0,0,0.50);
+	background: #ECEFF1;
+	background: -webkit-linear-gradient(left,#ECEFF1 0%,#B0BEC5 100%);
+	background: linear-gradient(to right,#ECEFF1 0%,#B0BEC5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECEFF1',endColorstr='#B0BEC5',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite;
+}
+#dark .btn-gradient.download:hover {
+	box-shadow: 0 5px 8px rgba(0,0,0,0.50);
+	background: #000;
+	background: -webkit-linear-gradient(left,#000 0%,#212121 100%);
+	background: linear-gradient(to right,#000 0%,#212121 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#212121',GradientType=1);
+	background-size: 400%;
+	-webkit-animation: Gradient 1s ease infinite;
+	animation: Gradient 1s ease infinite
+}
+/* ---------- Fin bouton contact ---------- */
+/* ---------- Fin Side-bar ---------- */
+
+.contenu {
+  width : 87.5%;
+  background-color: #EAEAEA;
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5%;
+  float: right;
+}
+@media screen and (max-width: 1440px) {
+  .contenu {
+    width: 100%;
+  }
+}
+/* ---------- Début Onglets de Navigation ---------- */
+.nav-bar {
+  width: 100%;
+}
+.nav-list {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+.nav-item {
+  padding: 8px 14px;
+  width: calc(100% / 6);
+  border: 1px black solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nav-item.active {
+  background-color: #9E8E8E;
+}
+.nav-item:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+}
+div.onglet > div.hide:not(.active) { display: none;}
+.onglet { padding-left: 1%;}
+.hide.active {
+  display: block;
+}
+.list1 {
+  padding-left: 2%;
+  width: 98%;
+  list-style-type: disc;
+  font-family: 'Open Sans', sans-serif;
+}
+.list1 li {
+  padding: 1% 0;
+  width: 100%;
+}
+.list1 h3 {
+  font-size: 1.7em;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 0.5%;
+}
+.list1 h4 {
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 0.5%;
+}
+.list1 a, .list1 a:visited {
+  text-decoration: none;
+  color: #4180FF;
+}
+.list1 a:hover { color: #6EACFF;}
+.list1 p {
+  font-size: 1.1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 15px;
+  border-left: 1px solid #000;
+}
+.list1 p span { padding-left: 30px;}
+.exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+  padding-bottom: 1%;
+}
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* ---------- Début Gallerie de compétences ---------- */
+#skills {
+  padding: 5%;
+  overflow: hidden;
+}
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: baseline;
+  height: 100%;
+  width: 81%;
+  margin: 2% 22% 2% 2%;
+}
+.gallery:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+.clipped-border{
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 5px;
+  background: linear-gradient(grey,lightgrey);
+  height: 250px;
+  width: 250px;
+  transition: transform 0.2s;
+  cursor: default;
+}
+.clipped-border:before{
+  content: '';
+  position: absolute;
+  opacity: 0.5;
+  width: 350px;
+  height: 70px;
+  background: white;
+  z-index:1;
+  transform:rotate(45deg);
+  transition:transform 0.5s;
+}
+.clipped-border:hover:before{
+  transform: translate(-100px,400%) rotate(45deg);
+  transition:transform 0.5s;
+}
+.clipped { margin: 61px 61px;}
+.clipped-border:hover{
+  transform:scale(1.2);
+  transition:transform 0.2s;
+  z-index:10;
+}
+/* ---------- Fin de Gallerie de compétences ---------- */
+
+/* ---------- Début Gallerie des Loisirs ---------- */
+.flips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.flip {
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+.container_flip {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.front_flip, .back_flip {
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.back_flip {
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+.front_flip::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  opacity: 0.6;
+  background-color: #333;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.container_flip:hover .front_flip, .container_flip:hover .back_flip {
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.back_flip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+}
+.container_flip .back_flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.container_flip .front_flip {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.container_flip:hover .back_flip {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.container_flip:hover .front_flip {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#videoGames { background-image:url('../images/jeux-video.jpg');}
+#movies { background-image:url('../images/serie.jpg');}
+#books { background-image:url('../images/livres.jpg');}
+/* ---------- Fin Galleries des loisirs ---------- */
+
+/* ---------- Début Footer ---------- */
+.foot {
+  align-self: flex-end;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #13406d 100%);
+  overflow: hidden;
+  transform: rotateX(180deg);
+}
+/* ---------- Fin du Footer ---------- */
