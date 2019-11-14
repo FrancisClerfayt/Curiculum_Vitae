@@ -81,14 +81,3 @@ function showTab(tabName) {
     alert("Erreur : mauvaise valeur en entrée de showTab");
   }
 }
-
-// about.style.display = "none";
-// linkAbout.style.background = "#EAEAEA";
-// experience.style.display = "none";
-// linkExp.style.background = "#EAEAEA";
-// training.style.display = "none";
-// linkTraining.style.background = "#EAEAEA";
-// skill.style.display = "none";
-// linkSkill.style.background = "#EAEAEA";
-// hobby.style.display = "block";
-// linkHobby.style.background = "#D4BEC9";
