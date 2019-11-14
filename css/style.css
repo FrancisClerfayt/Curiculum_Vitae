@@ -179,8 +179,8 @@ main {
 #dark .btn-gradient.phone:hover {
 	box-shadow: 0 5px 8px rgba(244,67,54,0.50);
 	background: #F44336;
-	background: -webkit-linear-gradient(left,#F44336 0%,#FF1744 100%);
-	background: linear-gradient(to right,#F44336 0%,#FF1744 100%);
+	background: -webkit-linear-gradient(left,#F44336 0%,#BF1134 100%);
+	background: linear-gradient(to right,#F44336 0%,#BF1134 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F44336',endColorstr='#FF1744',GradientType=1);
 	background-size: 400%;
 	-webkit-animation: Gradient 1s ease infinite;
@@ -220,8 +220,8 @@ main {
 #dark .btn-gradient.download:hover {
 	box-shadow: 0 5px 8px rgba(0,0,0,0.50);
 	background: #000;
-	background: -webkit-linear-gradient(left,#000 0%,#332E33 100%);
-	background: linear-gradient(to right,#000 0%,#212121 100%);
+	background: -webkit-linear-gradient(left,#000 0%,#333333 100%);
+	background: linear-gradient(to right,#000 0%,#333333 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#212121',GradientType=1);
 	background-size: 400%;
 	-webkit-animation: Gradient 1s ease infinite;
