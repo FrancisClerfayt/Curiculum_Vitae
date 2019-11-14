@@ -220,7 +220,7 @@ main {
 #dark .btn-gradient.download:hover {
 	box-shadow: 0 5px 8px rgba(0,0,0,0.50);
 	background: #000;
-	background: -webkit-linear-gradient(left,#000 0%,#212121 100%);
+	background: -webkit-linear-gradient(left,#000 0%,#332E33 100%);
 	background: linear-gradient(to right,#000 0%,#212121 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#212121',GradientType=1);
 	background-size: 400%;
