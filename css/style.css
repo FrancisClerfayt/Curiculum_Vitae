@@ -41,6 +41,12 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width:768px) {
+  .title {
+    font-size: 2em;
+    font-weight: 200;
+  }
+}
 /* pour les classes : stars, stars2 et stars3 voir étoiles.css */
 /* ---------- Fin header ---------- */
 
@@ -243,7 +249,8 @@ main {
 }
 @media screen and (max-width: 1440px) {
   .contenu {
-    width: 100%;
+    width: 99%;
+    padding: 1%
   }
 }
 /* ---------- Début Onglets de Navigation ---------- */
@@ -368,6 +375,9 @@ div.onglet > div.hide:not(.active) { display: none;}
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width:768px) {
+  .exp, .text {width:100%;}
+}
 
 /* ---------- Début Gallerie de compétences ---------- */
 #skills {
@@ -445,8 +455,8 @@ div.onglet > div.hide:not(.active) { display: none;}
 }
 @media screen and (max-width:768px) {
   .flip {
-    width: calc(94% / 3);
-    margin: 1%;
+    width: 98%;
+    margin: 2%;
   }
 }
 .container_flip {
