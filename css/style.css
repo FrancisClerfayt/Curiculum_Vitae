@@ -45,6 +45,7 @@ header {
   .title {
     font-size: 2em;
     font-weight: 200;
+    vertical-align: middle;
   }
 }
 /* pour les classes : stars, stars2 et stars3 voir étoiles.css */
@@ -249,7 +250,7 @@ main {
 }
 @media screen and (max-width: 1440px) {
   .contenu {
-    width: 99%;
+    width: 100%;
     padding: 1%
   }
 }
