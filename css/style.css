@@ -94,6 +94,7 @@ main {
 @media screen and (max-width: 1024px) {
   .lateral {
     width: 100%;
+    padding: 1%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -101,7 +102,7 @@ main {
   .bloc {
     display: block;
     position: relative;
-    width: calc(100% /2);
+    width: calc(98% /2);
     margin: 0 auto;
   }
 }
@@ -153,28 +154,28 @@ main {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
-#dark .btn-gradient {	color: rgba(0,0,0,0.54);}
-#dark .btn-gradient:hover {	color: #000;}
-#dark .btn-gradient:hover.download {color: #fff;}
+#dark .btn-gradient {	color: rgba(0,0,0,0.54); }
+#dark .btn-gradient:hover {	color: #000; }
+#dark .btn-gradient:hover.download {color: #fff; }
 #dark .btn-list:after {
 	color: rgba(255,255,255,0.54);
 	background: #000;
 }
-#dark .btn-gradient.mobile { border: 1px solid #29B6F6;}
-#dark .btn-gradient.phone { border: 1px solid #FF1744;}
-#dark .btn-gradient.gmail { border: 1px solid #D50000;}
-#dark .btn-gradient.linkedin { border: 1px solid #0288D1;}
-#dark .btn-gradient.github { border: 1px solid #B0BEC5;}
-#dark .btn-gradient.download { border: 1px solid #212121;}
+#dark .btn-gradient.mobile { border: 1px solid #29B6F6; }
+#dark .btn-gradient.phone { border: 1px solid #FF1744; }
+#dark .btn-gradient.gmail { border: 1px solid #D50000; }
+#dark .btn-gradient.linkedin { border: 1px solid #0288D1; }
+#dark .btn-gradient.github { border: 1px solid #B0BEC5; }
+#dark .btn-gradient.download { border: 1px solid #212121; }
 @-webkit-keyframes Gradient {
-	0% { background-position:0 50% }
-	50%	{	background-position:100% 50% }
-	100% { background-position:0 50% }
+	0% { background-position: 0 50%; }
+	50%	{	background-position: 100% 50%; }
+	100% { background-position: 0 50%; }
 }
 @keyframes Gradient {
-	0% { background-position:0 50% }
-	50%	{	background-position:100% 50% }
-	100% { background-position:0 50% }
+	0% { background-position: 0 50%; }
+	50%	{	background-position: 100% 50%; }
+	100% { background-position: 0 50%; }
 }
 #dark .btn-gradient.mobile:hover {
 	box-shadow:0 5px 8px rgba(3,169,244,0.50);
