@@ -80,6 +80,9 @@ main {
 .bloc table tr td {
   padding: 2% 1%;
 }
+.bloc.icon {
+  text-align: center;
+}
 #profilePicture {
   max-width: 175px;
   border-radius: 10px;
