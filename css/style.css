@@ -44,13 +44,6 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width:768px) {
-  .title {
-    font-size: 2em;
-    font-weight: 200;
-    vertical-align: middle;
-  }
-}
 /* pour les classes : stars, stars2 et stars3 voir étoiles.css */
 /* ---------- Fin header ---------- */
 
@@ -63,12 +56,6 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
 }
 /* ---------- Début Side-bar ---------- */
 .lateral {
@@ -93,21 +80,6 @@ main {
   max-width: 175px;
   border-radius: 10px;
   border: 2px solid #13406d;
-}
-@media screen and (max-width: 1024px) {
-  .lateral {
-    width: 100%;
-    padding: 1%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .bloc {
-    display: block;
-    position: relative;
-    width: calc(98% /2);
-    margin: 0 auto;
-  }
 }
 /* ---------- Début bouton contact ---------- */
 .btn-cont {
@@ -252,12 +224,6 @@ main {
   padding: 0.5%;
   float: right;
 }
-@media screen and (max-width: 1440px) {
-  .contenu {
-    width: 100%;
-    padding: 1%
-  }
-}
 /* ---------- Début Onglets de Navigation ---------- */
 .nav-bar {
   width: 100%;
@@ -283,15 +249,7 @@ main {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-@media screen and (max-width:768px) {
-  .nav-bar{
-    overflow-x: scroll;
-  }
-  .nav-item{
-    min-width: 200px;
-    padding: 2% 0.5%;
-  }
-}
+
 .nav-item.active {
   background-color: #9E8E8E;
 }
@@ -303,11 +261,7 @@ main {
   text-decoration: none;
   color: #000;
 }
-@media screen and (max-width:768px) {
-  .nav-item a h2{
-    font-size: 1.25em;
-  }
-}
+
 div.onglet > div.hide:not(.active) { display: none;}
 .onglet { padding-left: 1%;}
 .hide.active {
@@ -379,9 +333,6 @@ div.onglet > div.hide:not(.active) { display: none;}
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-@media screen and (max-width:768px) {
-  .exp, .text {width:100%;}
 }
 
 /* ---------- Début Gallerie de compétences ---------- */
@@ -457,12 +408,6 @@ div.onglet > div.hide:not(.active) { display: none;}
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
-}
-@media screen and (max-width:768px) {
-  .flip {
-    width: 98%;
-    margin: 2%;
-  }
 }
 .container_flip {
   -webkit-transform-style: preserve-3d;
@@ -578,3 +523,48 @@ div.onglet > div.hide:not(.active) { display: none;}
   transform: rotateX(180deg);
 }
 /* ---------- Fin du Footer ---------- */
+
+/* ---------- Media Queries ---------- */
+@media screen and (max-width: 1440px) {
+  .contenu {
+    width: 100%;
+    padding: 1%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .lateral {
+    width: 100%;
+    padding: 1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bloc {
+    display: block;
+    position: relative;
+    width: calc(98% /2);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .title {
+    font-size: 2em;
+    font-weight: 200;
+    vertical-align: middle;
+  }
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .nav-bar{ overflow-x: scroll; }
+  .nav-item{
+    min-width: 200px;
+    padding: 2% 0.5%;
+  }
+  .nav-item a h2{ font-size: 1.25em; }
+  .exp, .text { width:100%; }
+  .flip {
+    width: 98%;
+    margin: 2%;
+  }
+}
