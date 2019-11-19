@@ -594,7 +594,7 @@ div.onglet > div.hide:not(.active) {
   }
   .nav-item{
     min-width: 200px;
-    padding: 2% 0.5%;
+    padding: 2% 1.5%;
   }
   .nav-item a h2{
     font-size: 1.25em;
