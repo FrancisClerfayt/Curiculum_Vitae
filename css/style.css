@@ -436,8 +436,6 @@ div.onglet > div.hide:not(.active) {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
-
-  
 }
 .container_flip {
   -webkit-transform-style: preserve-3d;
