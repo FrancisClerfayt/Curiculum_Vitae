@@ -78,7 +78,7 @@ main {
   text-decoration: none;
 }
 .bloc table tr td {
-  padding: 0.5% 1%;
+  padding: 2% 1%;
 }
 #profilePicture {
   max-width: 175px;
