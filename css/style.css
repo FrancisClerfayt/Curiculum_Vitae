@@ -11,7 +11,9 @@ body {
   flex-flow: column nowrap;
   font-family: 'Source Sans Pro', sans-serif;
 }
-p { margin: 1% 1% 0 1%;}
+p {
+  margin: 1% 1% 0 1%;
+}
 
 /* ---------- Début header ---------- */
 header {
@@ -75,7 +77,9 @@ main {
   color: darkblue;
   text-decoration: none;
 }
-.bloc table tr td { padding: 5px 10px;}
+.bloc table tr td {
+  padding: 0.5% 1%;
+}
 #profilePicture {
   max-width: 175px;
   border-radius: 10px;
@@ -129,19 +133,37 @@ main {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
-#dark .btn-gradient {	color: rgba(0,0,0,0.54); }
-#dark .btn-gradient:hover {	color: #000; }
-#dark .btn-gradient:hover.download {color: #fff; }
+#dark .btn-gradient {
+  color: rgba(0,0,0,0.54);
+}
+#dark .btn-gradient:hover {
+  color: #000;
+}
+#dark .btn-gradient:hover.download {
+  color: #fff;
+}
 #dark .btn-list:after {
 	color: rgba(255,255,255,0.54);
 	background: #000;
 }
-#dark .btn-gradient.mobile { border: 1px solid #29B6F6; }
-#dark .btn-gradient.phone { border: 1px solid #FF1744; }
-#dark .btn-gradient.gmail { border: 1px solid #D50000; }
-#dark .btn-gradient.linkedin { border: 1px solid #0288D1; }
-#dark .btn-gradient.github { border: 1px solid #B0BEC5; }
-#dark .btn-gradient.download { border: 1px solid #212121; }
+#dark .btn-gradient.mobile {
+  border: 1px solid #29B6F6;
+}
+#dark .btn-gradient.phone {
+  border: 1px solid #FF1744;
+}
+#dark .btn-gradient.gmail {
+  border: 1px solid #D50000;
+}
+#dark .btn-gradient.linkedin {
+  border: 1px solid #0288D1;
+}
+#dark .btn-gradient.github {
+  border: 1px solid #B0BEC5;
+}
+#dark .btn-gradient.download {
+  border: 1px solid #212121;
+}
 @-webkit-keyframes Gradient {
 	0% { background-position: 0 50%; }
 	50%	{	background-position: 100% 50%; }
@@ -216,7 +238,6 @@ main {
 }
 /* ---------- Fin bouton contact ---------- */
 /* ---------- Fin Side-bar ---------- */
-
 .contenu {
   width : 87.5%;
   background-color: #EAEAEA;
@@ -243,13 +264,12 @@ main {
   list-style-type: none;
 }
 .nav-item {
-  padding: 8px 14px;
+  padding: 0.6% 1.4%;
   width: calc(100% / 5);
   border: 1px black solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .nav-item.active {
   background-color: #9E8E8E;
 }
@@ -261,9 +281,12 @@ main {
   text-decoration: none;
   color: #000;
 }
-
-div.onglet > div.hide:not(.active) { display: none;}
-.onglet { padding-left: 1%;}
+div.onglet > div.hide:not(.active) {
+  display: none;
+}
+.onglet {
+  padding-left: 1%;
+}
 .hide.active {
   display: block;
 }
@@ -291,14 +314,18 @@ div.onglet > div.hide:not(.active) { display: none;}
   text-decoration: none;
   color: #4180FF;
 }
-.list1 a:hover { color: #6EACFF;}
+.list1 a:hover {
+  color: #6EACFF;
+}
 .list1 p {
   font-size: 1.1em;
   font-family: 'Source Sans Pro', sans-serif;
   padding-left: 15px;
   border-left: 1px solid #000;
 }
-.list1 p span { padding-left: 30px;}
+.list1 p span {
+  padding-left: 30px;
+}
 .exp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,7 +361,6 @@ div.onglet > div.hide:not(.active) { display: none;}
   align-items: center;
   margin: 0 auto;
 }
-
 /* ---------- Début Gallerie de compétences ---------- */
 #skills {
   padding: 5%;
@@ -368,7 +394,7 @@ div.onglet > div.hide:not(.active) { display: none;}
   transition: transform 0.2s;
   cursor: default;
 }
-.clipped-border:before{
+.clipped-border:before {
   content: '';
   position: absolute;
   opacity: 0.5;
@@ -379,12 +405,14 @@ div.onglet > div.hide:not(.active) { display: none;}
   transform:rotate(45deg);
   transition:transform 0.5s;
 }
-.clipped-border:hover:before{
+.clipped-border:hover:before {
   transform: translate(-100px,400%) rotate(45deg);
   transition:transform 0.5s;
 }
-.clipped { margin: 61px 61px;}
-.clipped-border:hover{
+.clipped {
+  margin: 61px 61px;
+}
+.clipped-border:hover {
   transform:scale(1.2);
   transition:transform 0.2s;
   z-index:10;
@@ -505,11 +533,16 @@ div.onglet > div.hide:not(.active) { display: none;}
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#videoGames { background-image:url('../images/jeux-video.jpg');}
-#movies { background-image:url('../images/serie.jpg');}
-#books { background-image:url('../images/livres.jpg');}
+#videoGames {
+  background-image:url('../images/jeux-video.jpg');
+}
+#movies {
+  background-image:url('../images/serie.jpg');
+}
+#books {
+  background-image:url('../images/livres.jpg');
+}
 /* ---------- Fin Galleries des loisirs ---------- */
-
 /* ---------- Début Footer ---------- */
 .foot {
   align-self: flex-end;
@@ -556,13 +589,19 @@ div.onglet > div.hide:not(.active) { display: none;}
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .nav-bar{ overflow-x: scroll; }
+  .nav-bar{
+    overflow-x: scroll;
+  }
   .nav-item{
     min-width: 200px;
     padding: 2% 0.5%;
   }
-  .nav-item a h2{ font-size: 1.25em; }
-  .exp, .text { width:100%; }
+  .nav-item a h2{
+    font-size: 1.25em;
+  }
+  .exp, .text {
+    width: 100%;
+  }
   .flip {
     width: 98%;
     margin: 2%;
