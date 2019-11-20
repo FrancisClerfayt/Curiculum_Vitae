@@ -596,6 +596,10 @@ div.onglet > div.hide:not(.active) {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+  #profilePicture {
+    max-width: 45%;
+    margin: 2.5%;
+  }
   .nav-bar{
     overflow-x: scroll;
   }
