@@ -14,7 +14,6 @@ body {
 p {
   margin: 1% 1% 0 1%;
 }
-
 /* ---------- Début header ---------- */
 header {
   width: 100%;
@@ -188,7 +187,7 @@ main {
 	-webkit-animation: Gradient 1s ease infinite;
 	animation: Gradient 1s ease infinite
 }
-#dark .btn-gradient.phone:hover {
+/* #dark .btn-gradient.phone:hover { */
 	box-shadow: 0 5px 8px rgba(244,67,54,0.50);
 	background: #F44336;
 	background: -webkit-linear-gradient(left,#F44336 0%,#BF1134 100%);
@@ -388,10 +387,11 @@ div.onglet > div.hide:not(.active) {
   height: 100%;
 }
 .clipped-border{
-  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  padding: 5px;
+  -webkit-clip-path: circle(50%);
+  clip-path: circle(50%);
+  padding: 0.5%;
   background: linear-gradient(grey,lightgrey);
+  border-radius: 50%;
   height: 250px;
   width: 250px;
   transition: transform 0.2s;
