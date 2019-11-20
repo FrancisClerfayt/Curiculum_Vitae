@@ -187,7 +187,7 @@ main {
 	-webkit-animation: Gradient 1s ease infinite;
 	animation: Gradient 1s ease infinite
 }
-/* #dark .btn-gradient.phone:hover { */
+#dark .btn-gradient.phone:hover {
 	box-shadow: 0 5px 8px rgba(244,67,54,0.50);
 	background: #F44336;
 	background: -webkit-linear-gradient(left,#F44336 0%,#BF1134 100%);
@@ -387,8 +387,10 @@ div.onglet > div.hide:not(.active) {
   height: 100%;
 }
 .clipped-border{
-  -webkit-clip-path: circle(50%);
-  clip-path: circle(50%);
+  -webkit-clip-path: circle(45%);
+  -ms-clip-path: circle(45%);
+  -o-clip-path: circle(45%);
+  clip-path: circle(45%);
   padding: 0.5%;
   background: linear-gradient(grey,lightgrey);
   border-radius: 50%;
@@ -401,7 +403,7 @@ div.onglet > div.hide:not(.active) {
   content: '';
   position: absolute;
   opacity: 0.5;
-  width: 350px;
+  width: 400px;
   height: 70px;
   background: white;
   z-index:1;
