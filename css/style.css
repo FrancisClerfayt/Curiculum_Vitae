@@ -620,9 +620,6 @@ div.onglet > div.hide:not(.active) {
     justify-content: flex-start;
     align-items: center;
   }
-  .clipped-border:before {
-    width: 70%;
-  }
   .flip {
     width: 98%;
     margin: 2%;
