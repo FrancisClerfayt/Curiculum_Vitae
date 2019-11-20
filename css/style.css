@@ -422,6 +422,9 @@ div.onglet > div.hide:not(.active) {
   transition:transform 0.2s;
   z-index:10;
 }
+.java {
+  background: url("../img/java_logo_128.png");
+}
 /* ---------- Fin de Gallerie de compétences ---------- */
 
 /* ---------- Début Gallerie des Loisirs ---------- */
@@ -539,13 +542,13 @@ div.onglet > div.hide:not(.active) {
   transform-style: preserve-3d;
 }
 #videoGames {
-  background-image:url('../images/jeux-video.jpg');
+  background-image:url('../img/jeux-video.jpg');
 }
 #movies {
-  background-image:url('../images/serie.jpg');
+  background-image:url('../img/serie.jpg');
 }
 #books {
-  background-image:url('../images/livres.jpg');
+  background-image:url('../img/livres.jpg');
 }
 /* ---------- Fin Galleries des loisirs ---------- */
 /* ---------- Début Footer ---------- */
