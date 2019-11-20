@@ -611,6 +611,8 @@ div.onglet > div.hide:not(.active) {
   }
   .gallery {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%
   }
   .clipped-border {
