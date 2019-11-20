@@ -10,8 +10,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   font-family: 'Source Sans Pro', sans-serif;
 }
 p {
@@ -21,7 +21,7 @@ p {
 header {
   width: 100%;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,17 +56,17 @@ header {
 /* ---------- Début Contenu ---------- */
 main {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 /* ---------- Début Side-bar ---------- */
 .lateral {
@@ -75,16 +75,16 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: #D4E6FF;
   font-family: 'Source Sans Pro', sans-serif;
   width: 12.5%;
@@ -120,12 +120,12 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .btn-gradient {
   width: 36px;
@@ -136,8 +136,8 @@ main {
   margin: 10px;
   border-radius: 50%;
   -webkit-transition: all 300ms;
-	-o-transition: all 300ms;
-	transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
 }
 .btn-gradient i {
   font-size: 18px;
@@ -145,19 +145,19 @@ main {
   vertical-align: middle;
 }
 #dark {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 #dark .btn-gradient {
   color: rgba(0,0,0,0.54);
@@ -283,8 +283,8 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: flex-start;
@@ -361,8 +361,8 @@ div.onglet > div.hide:not(.active) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: space-between;
@@ -376,8 +376,8 @@ div.onglet > div.hide:not(.active) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: flex-start;
@@ -394,8 +394,8 @@ div.onglet > div.hide:not(.active) {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
 }
 /* ---------- Début Gallerie de compétences ---------- */
@@ -409,14 +409,14 @@ div.onglet > div.hide:not(.active) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -440,8 +440,8 @@ div.onglet > div.hide:not(.active) {
 }
 .skill:hover {
   -webkit-transform:scale(1.2);
-      -ms-transform:scale(1.2);
-          transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
   -webkit-transition:-webkit-transform 0.2s;
   transition:-webkit-transform 0.2s;
   -o-transition:transform 0.2s;
@@ -458,8 +458,8 @@ div.onglet > div.hide:not(.active) {
   background: white;
   z-index:1;
   -webkit-transform:rotate(45deg);
-      -ms-transform:rotate(45deg);
-          transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg);
   -webkit-transition:-webkit-transform 0.5s;
   transition:-webkit-transform 0.5s;
   -o-transition:transform 0.5s;
@@ -468,8 +468,8 @@ div.onglet > div.hide:not(.active) {
 }
 .skill:hover:before {
   -webkit-transform: translate(-100px,400%) rotate(45deg);
-      -ms-transform: translate(-100px,400%) rotate(45deg);
-          transform: translate(-100px,400%) rotate(45deg);
+  -ms-transform: translate(-100px,400%) rotate(45deg);
+  transform: translate(-100px,400%) rotate(45deg);
   -webkit-transition:-webkit-transform 0.5s;
   transition:-webkit-transform 0.5s;
   -o-transition:transform 0.5s;
@@ -500,16 +500,16 @@ div.onglet > div.hide:not(.active) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .flip {
   width: calc(25% - 2rem);
@@ -625,7 +625,7 @@ div.onglet > div.hide:not(.active) {
 /* ---------- Début Footer ---------- */
 .foot {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   bottom: 0;
   margin: 0;
   padding: 0;
@@ -635,7 +635,7 @@ div.onglet > div.hide:not(.active) {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #13406d 100%);
   overflow: hidden;
   -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 /* ---------- Fin du Footer ---------- */
 
@@ -652,12 +652,12 @@ div.onglet > div.hide:not(.active) {
     padding: 1%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .bloc {
     display: block;
@@ -675,10 +675,10 @@ div.onglet > div.hide:not(.active) {
   main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   #profilePicture {
     max-width: 45%;
@@ -700,13 +700,13 @@ div.onglet > div.hide:not(.active) {
   .gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
   }
   .skill{
