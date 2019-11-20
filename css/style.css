@@ -379,7 +379,6 @@ div.onglet > div.hide:not(.active) {
   align-items: baseline;
   height: 100%;
   width: 81%;
-  margin: 2% 22% 2% 2%;
 }
 .gallery:after {
   content: '';
@@ -403,7 +402,7 @@ div.onglet > div.hide:not(.active) {
   content: '';
   position: absolute;
   opacity: 0.5;
-  width: 400px;
+  width: 350px;
   height: 70px;
   background: white;
   z-index:1;
@@ -609,6 +608,20 @@ div.onglet > div.hide:not(.active) {
   }
   .exp, .text {
     width: 100%;
+  }
+  .gallery {
+    flex-direction: column;
+    width: 100%
+  }
+  .clipped-border {
+    width: 66%;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .clipped-border:before {
+    width: 70%;
   }
   .flip {
     width: 98%;
