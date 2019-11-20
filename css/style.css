@@ -615,10 +615,6 @@ div.onglet > div.hide:not(.active) {
   }
   .clipped-border {
     width: 66%;
-    -webkit-box-pack: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
-    align-items: center;
   }
   .flip {
     width: 98%;
