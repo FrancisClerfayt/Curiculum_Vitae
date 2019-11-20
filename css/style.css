@@ -375,54 +375,63 @@ div.onglet > div.hide:not(.active) {
   flex-flow: row wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
-  width: 81%;
+  width: 100%;
 }
 .gallery:after {
   content: '';
   width: 100%;
   height: 100%;
 }
-.clipped-border{
-  -webkit-clip-path: circle(45%);
-  -ms-clip-path: circle(45%);
-  -o-clip-path: circle(45%);
-  clip-path: circle(45%);
-  padding: 0.5%;
-  background: linear-gradient(grey,lightgrey);
+.skill {
+  -webkit-clip-path: circle(50%);
+  -ms-clip-path: circle(50%);
+  -o-clip-path: circle(50%);
+  clip-path: circle(50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid midnightblue;
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  transition: transform 0.2s;
-  cursor: default;
+  width: 200px;
+  height: 200px;
+  margin: 0 2%;
 }
-.clipped-border:before {
+.skill:hover {
+  transform:scale(1.2);
+  transition:transform 0.2s;
+  z-index:10;
+}
+.skill:before {
   content: '';
   position: absolute;
   opacity: 0.5;
-  width: 350px;
+  width: 300px;
   height: 70px;
   background: white;
   z-index:1;
   transform:rotate(45deg);
   transition:transform 0.5s;
 }
-.clipped-border:hover:before {
+.skill:hover:before {
   transform: translate(-100px,400%) rotate(45deg);
   transition:transform 0.5s;
 }
-.clipped {
-  margin: 61px 61px;
-}
-.clipped-border:hover {
-  transform:scale(1.2);
-  transition:transform 0.2s;
-  z-index:10;
-}
 .java {
-  background: url("../img/java_logo_128.png");
+  background-image: url("../img/java_logo_128.png");
+}
+.c {
+  background-image: url("../img/c_logo_128.png");
+}
+.html {
+  background-image: url("../img/html5_logo_128.png");
+}
+.css {
+  background-image: url("../img/css3_logo_128.png");
+}
+.sql {
+  background-image: url("../img/mysql_logo_128.png");
 }
 /* ---------- Fin de Gallerie de compétences ---------- */
 
@@ -616,11 +625,11 @@ div.onglet > div.hide:not(.active) {
   .gallery {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%
+    justify-content: space-around;
+    width: 100%;
   }
-  .clipped-border {
-    width: 66%;
+  .skill{
+    margin: 3% 0;
   }
   .flip {
     width: 98%;
