@@ -614,12 +614,15 @@ div.onglet > div.hide:not(.active) {
 }
 #videoGames {
   background-image:url('../img/jeux-video.jpg');
+  background-size: cover;
 }
 #movies {
-  background-image:url('../img/serie.jpg');
+  background-image:url('../img/series.jpg');
+  background-size: cover;
 }
 #books {
   background-image:url('../img/livres.jpg');
+  background-size: cover;
 }
 /* ---------- Fin Galleries des loisirs ---------- */
 /* ---------- Début Footer ---------- */
