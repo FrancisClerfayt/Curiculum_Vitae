@@ -580,13 +580,16 @@ div.onglet > div.hide:not(.active) {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1em;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+}
+.inner p {
+  margin: 0;
 }
 .container_flip .back_flip {
   -webkit-transform: rotateY(180deg);
