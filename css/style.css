@@ -687,7 +687,7 @@ div.onglet > div.hide:not(.active) {
     flex-wrap: nowrap;
   }
   #profilePicture {
-    max-width: 45%;
+    max-width: 66%;
     margin: 2.5%;
   }
   .nav-bar{
