@@ -444,7 +444,7 @@ div.onglet > div.hide:not(.active) {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin: 0 2%;
+  margin: 2%;
 }
 .skill:hover {
   -webkit-transform:scale(1.2);
