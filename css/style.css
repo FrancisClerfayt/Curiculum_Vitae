@@ -352,7 +352,11 @@ div.onglet > div.hide:not(.active) {
   border-left: 1px solid #000;
 }
 .list1 p span {
-  padding-left: 30px;
+  padding-left: 3%;
+}
+#aPropos p span {
+  padding-left: 3%;
+  line-height: 1.5;
 }
 .exp {
   display: -webkit-box;
