@@ -654,13 +654,11 @@ div.onglet > div.hide:not(.active) {
 /* ---------- Fin du Footer ---------- */
 
 /* ---------- Media Queries ---------- */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
   .contenu {
     width: 100%;
     padding: 1%
   }
-}
-@media screen and (max-width: 1024px) {
   .lateral {
     width: 100%;
     padding: 1%;
