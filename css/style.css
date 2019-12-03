@@ -496,6 +496,9 @@ div.onglet > div.hide:not(.active) {
 .css {
   background-image: url("../img/css3_logo_128.png");
 }
+.js {
+  background-image: url("../img/js_logo_128.png");
+}
 .sql {
   background-image: url("../img/mysql_logo_128.png");
 }
