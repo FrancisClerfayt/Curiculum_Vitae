@@ -354,6 +354,11 @@ div.onglet > div.hide:not(.active) {
 .list1 p span {
   padding-left: 3%;
 }
+#aPropos p {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 15px;
+}
 #aPropos p span {
   padding-left: 3%;
   line-height: 1.5;
