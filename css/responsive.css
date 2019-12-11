@@ -44,7 +44,6 @@
     overflow-x: scroll;
   }
   .nav-item{
-    min-width: 250px;
     padding: 2% 1.5%;
   }
   .nav-item a h2{
