@@ -274,8 +274,9 @@ main {
 /* ---------- Début Onglets de Navigation ---------- */
 .nav-bar {
   width: 100%;
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
+  overflow-x: scroll;
 }
 .nav-list {
   width: 100%;
@@ -295,6 +296,7 @@ main {
   list-style-type: none;
 }
 .nav-item {
+  min-width: 250px;
   padding: 0.6% 1.4%;
   width: calc(100% / 5);
   border: 1px black solid;
@@ -527,7 +529,7 @@ div.onglet > div.hide:not(.active) {
   align-items: center;
 }
 .flip {
-  width: 17%;
+  width: 280px;
   margin: 3em;
   cursor: pointer;
 }
@@ -645,6 +647,8 @@ div.onglet > div.hide:not(.active) {
 /* ---------- Fin Galleries des loisirs ---------- */
 /* ---------- Début Footer ---------- */
 .foot {
+  position: sticky;
+  bottom: 0;
   -ms-flex-item-align: end;
   align-self: flex-end;
   bottom: 0;
@@ -659,80 +663,3 @@ div.onglet > div.hide:not(.active) {
   transform: rotateX(180deg);
 }
 /* ---------- Fin du Footer ---------- */
-
-/* ---------- Media Queries ---------- */
-@media screen and (max-width: 1024px) {
-  .contenu {
-    width: 100%;
-    padding: 1%
-  }
-  .lateral {
-    width: 100%;
-    padding: 1%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .bloc {
-    display: block;
-    position: relative;
-    width: calc(98% /2);
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width:768px) {
-  .title {
-    font-size: 2em;
-    font-weight: 200;
-    vertical-align: middle;
-  }
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  #profilePicture {
-    max-width: 66%;
-    margin: 2.5%;
-  }
-  .nav-bar{
-    overflow-x: scroll;
-  }
-  .nav-item{
-    min-width: 200px;
-    padding: 2% 1.5%;
-  }
-  .nav-item a h2{
-    font-size: 1.25em;
-  }
-  .exp, .text {
-    width: 100%;
-  }
-  .gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .skill{
-    margin: 3% 0;
-  }
-  .flip {
-    width: 98%;
-    margin: 2%;
-  }
-}
