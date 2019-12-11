@@ -68,8 +68,9 @@
   .skill{
     margin: 3% 0;
   }
-  .flip {
-    width: 98%;
-    margin: 2%;
+  .flips {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }

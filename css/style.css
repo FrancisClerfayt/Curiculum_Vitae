@@ -277,6 +277,7 @@ main {
   position: sticky;
   top: 0;
   overflow-x: scroll;
+  z-index: 10;
 }
 .nav-list {
   width: 100%;
