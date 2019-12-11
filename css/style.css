@@ -662,5 +662,6 @@ div.onglet > div.hide:not(.active) {
   overflow: hidden;
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
+  z-index: 50;
 }
 /* ---------- Fin du Footer ---------- */
