@@ -278,6 +278,7 @@ main {
   top: 0;
   overflow-x: scroll;
   z-index: 10;
+  background-color: #eaeaea;
 }
 .nav-list {
   width: 100%;
@@ -295,6 +296,7 @@ main {
   -ms-flex-pack: flex-start;
   justify-content: flex-start;
   list-style-type: none;
+  background-color: #eaeaea;
 }
 .nav-item {
   min-width: 230px;
