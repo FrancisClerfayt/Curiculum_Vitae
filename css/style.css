@@ -86,7 +86,8 @@ main {
   align-items: flex-start;
   background-color: #D4E6FF;
   font-family: 'Open Sans', sans-serif;
-  width: 12.5%;
+  font-size: 1em;
+  width: 13%;
   padding: 0.5%;
 }
 .lateral a {
@@ -265,7 +266,7 @@ main {
 /* ---------- Fin bouton contact ---------- */
 /* ---------- Fin Side-bar ---------- */
 .contenu {
-  width : 87.5%;
+  width : 87%;
   background-color: #EAEAEA;
   font-family: 'Raleway', sans-serif;
   padding: 0.5%;
