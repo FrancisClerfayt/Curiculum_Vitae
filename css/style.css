@@ -276,7 +276,6 @@ main {
   width: 100%;
   position: sticky;
   top: 0;
-  overflow-x: scroll;
   z-index: 10;
   background-color: #eaeaea;
 }
@@ -299,9 +298,9 @@ main {
   background-color: #eaeaea;
 }
 .nav-item {
-  min-width: 230px;
   padding: 0.6% 1.4%;
   width: calc(100% / 5);
+  min-width: 246px;
   border: 1px black solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

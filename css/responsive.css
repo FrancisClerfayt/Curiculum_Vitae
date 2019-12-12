@@ -1,4 +1,23 @@
+@media screen and (max-width: 1440px) {
+  .nav-bar {
+    overflow-x: scroll;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2em;
+    font-weight: 200;
+    vertical-align: middle;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
   .contenu {
     width: 100%;
     padding: 1%
@@ -23,19 +42,6 @@
   }
 }
 @media screen and (max-width:768px) {
-  .title {
-    font-size: 2em;
-    font-weight: 200;
-    vertical-align: middle;
-  }
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
   #profilePicture {
     max-width: 66%;
     margin: 2.5%;
