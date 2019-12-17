@@ -660,11 +660,25 @@ div.onglet > div.hide:not(.active) {
   padding: 0;
   width: 100%;
   height: 50px;
-  background: -o-radial-gradient(bottom, ellipse, #1b2735 0%, #13406d 100%);
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #13406d 100%);
+  background: -o-radial-gradient(top, ellipse, #1b2735 0%, #13406d 100%);
+  background: radial-gradient(ellipse at top, #1b2735 0%, #13406d 100%);
   overflow: hidden;
+  z-index: 50;
+}
+.foot p {
+  background: -o-linear-gradient(#BA7500, #FFAB19);
+  background: -webkit-linear-gradient(#BA7500, #FFAB19);
+  background: linear-gradient(#BA7500, #FFAB19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0.5%;
+  bottom: 15%;
+}
+.footer {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  z-index: 50;
 }
 /* ---------- Fin du Footer ---------- */
