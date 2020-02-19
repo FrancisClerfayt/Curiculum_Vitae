@@ -89,6 +89,7 @@ main {
   font-family: 'Open Sans', 'Verdana', sans-serif;
   font-size: 1em;
   width: 13%;
+  min-height: 737px;
   padding: 0.5%;
 }
 .lateral a {
@@ -367,7 +368,7 @@ div.onglet > div.hide:not(.active) {
 #aPropos p {
   font-size: 1.2em;
   font-family: 'Open Sans', 'Verdana', sans-serif;
-  padding-left: 15px;
+  padding: 2% 0 0 2%;
 }
 #aPropos p span {
   padding-left: 3%;
@@ -512,6 +513,12 @@ div.onglet > div.hide:not(.active) {
 .sql {
   background-image: url("../img/mysql_logo_128.png");
 }
+.wordpress {
+  background-image: url("../img/Wordpress_logo_128.png");
+}
+.bootstrap {
+  background-image: url("../img/bootstrap_logo_128.png");
+}
 /* ---------- Fin de Gallerie de compétences ---------- */
 
 /* ---------- Début Gallerie des Loisirs ---------- */
@@ -652,9 +659,6 @@ div.onglet > div.hide:not(.active) {
 /* ---------- Début Footer ---------- */
 .foot {
   position: sticky;
-  bottom: 0;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
   bottom: 0;
   margin: 0;
   padding: 0;
