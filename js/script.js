@@ -2,9 +2,9 @@ function age() {
   var birthday = new Date(1991, 5, 10);
   var currentYear = new Date();
   var age = currentYear.getYear() - birthday.getYear();
-  if((currentYear.getMonth() - birthday.getMonth()) < 0){
-    age--;
-  } else if((currentYear.getDay() - birthday.getDay()) < 0) {
+  var month = currentYear.getMonth() - birthday.getMonth();
+  var day = currentYear.getDay() - birthday.getDay();
+  if((month < 0) || (day < 0)){
     age--;
   }
   return age;
