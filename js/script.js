@@ -3,7 +3,7 @@ function age() {
   var currentYear = new Date();
   var age = currentYear.getYear() - birthday.getYear();
   var month = currentYear.getMonth() - birthday.getMonth();
-  var day = currentYear.getDay() - birthday.getDay();
+  var day = currentYear.getDate() - birthday.getDate();
   if((month < 0) || (day < 0)){
     age--;
   }
