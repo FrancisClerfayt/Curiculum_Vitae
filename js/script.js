@@ -4,7 +4,9 @@ function age() {
   var age = currentYear.getYear() - birthday.getYear();
   var month = currentYear.getMonth() - birthday.getMonth();
   var day = currentYear.getDate() - birthday.getDate();
-  if((month < 0) || (day < 0)){
+  if(month < 0){
+    age--;
+  } else if (month == 0 && day < 0){
     age--;
   }
   return age;
