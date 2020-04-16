@@ -12,27 +12,43 @@ function age() {
   return age;
 }
 
+let previous = "";
+
 function showTab(tabName) {
 
+  if(previous != ""){
+    previous.removeClass("active");
+  }
   $(".active").removeClass("active");
 
-  if (tabName === "about") {
-    $("#aPropos").addClass("active");
-    $("#linkAbout").addClass("active");
-  } else if (tabName === "XP") {
-    $("#experience").addClass("active");
-    $("#linkExp").addClass("active");
-  } else if (tabName === "training") {
-    $("#formation").addClass("active");
-    $("#linkTraining").addClass("active");
-  } else if (tabName === "skill") {
-    $("#skills").addClass("active");
-    $("#linkSkill").addClass("active");
-  } else if (tabName === "hobby") {
-    $("#hobby").addClass("active");
-    $("#linkHobby").addClass("active");
-  } else {
-    alert("Erreur : mauvaise valeur en entrée de showTab");
+  switch (tabName) {
+    case "about":
+      $("#aPropos").addClass("active");
+      previous = $("#aPropos");
+      $("#linkAbout").addClass("active");
+      break;
+    case "XP":
+      $("#experience").addClass("active");
+      previous = $("#experience");
+      $("#linkExp").addClass("active");
+      break;
+    case "training":
+      $("#formation").addClass("active");
+      previous = $("#formation");
+      $("#linkTraining").addClass("active");
+      break;
+    case "skill":
+      $("#skills").addClass("active");
+      previous = $("#skills");
+      $("#linkSkill").addClass("active");
+      break;
+    case "hobby":
+      $("#hobby").addClass("active");
+      $("#linkHobby").addClass("active");
+      break;
+    default:
+      alert("Erreur : mauvaise valeur en entrée de showTab");
+      break;
   }
 }
 
