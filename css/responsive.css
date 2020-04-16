@@ -33,12 +33,16 @@
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    min-height: auto;
   }
   .bloc {
     display: block;
     position: relative;
     width: calc(98% /2);
     margin: 0 auto;
+  }
+  .exp, .text {
+    width: 100%;
   }
 }
 @media screen and (max-width:768px) {
@@ -54,9 +58,6 @@
   }
   .nav-item a h2{
     font-size: 1.25em;
-  }
-  .exp, .text {
-    width: 100%;
   }
   .gallery {
     -webkit-box-orient: vertical;
