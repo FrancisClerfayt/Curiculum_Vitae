@@ -12,12 +12,9 @@
   <link href="css/etoiles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://kit.fontawesome.com/814bec3aa1.js" crossorigin="anonymous" ></script>
-  <script src="js/script.js"></script>
+
 </head>
-<body onload="showTab('about');">
+<body>
   <header id="canvas">
     <div class="stars"></div>
     <div class="stars2"></div>
@@ -43,7 +40,6 @@
             </td>
             <td>
               <p id="age"></p>
-              <script>document.getElementById("age").innerHTML = age() + " ans"</script>
             </td>
           </tr>
           <tr>
@@ -94,7 +90,7 @@
             </a>
           </li>
           <li>
-            <a href="pdf/CV.pdf"  class="btn-gradient rounded download" title="Télécharger Version PDF" target="_blank" rel="noreferrer">
+            <a href="pdf/CV_Francis_Clerfayt.pdf"  class="btn-gradient rounded download" title="Télécharger Version PDF" target="_blank" rel="noreferrer">
               <i class="fas fa-download"></i>
             </a>
           </li>
@@ -132,7 +128,7 @@
         </ul>
       </nav>
       <div class="onglet">
-        <div class="hide active" id="aPropos">
+        <div class="hide" id="aPropos">
           <p>
             <span>
               De par ma curiosité et passion pour les nouvelles technologies,
@@ -389,5 +385,8 @@
       <div class="stars3"></div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/814bec3aa1.js" crossorigin="anonymous" ></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
