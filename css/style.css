@@ -279,7 +279,7 @@ main {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 15;
   background-color: #eaeaea;
 }
 .nav-list {
@@ -319,6 +319,9 @@ main {
 .nav-item a {
   text-decoration: none;
   color: #000;
+}
+.nav-item > a > h2 {
+  font-size: 1.4rem;
 }
 div.onglet > div.hide:not(.active) {
   display: none;
@@ -416,6 +419,10 @@ div.onglet > div.hide:not(.active) {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
+  width: 20%;
+}
+.logo_img {
+  width: 100%;
 }
 /* ---------- Début Gallerie de compétences ---------- */
 #skills {
